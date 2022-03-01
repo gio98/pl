@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+body {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5vw;
+}
+
+p {
+  font-size: 3vw;
+}
+
+.pizza {
+  width: 50vw;
+  height: 50vw;
+  background: tan;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: spin 6s 2s infinite;
+          animation: spin 6s 2s infinite;
+}
+.pizza__sauce {
+  width: 45vw;
+  height: 45vw;
+  border-radius: 50%;
+  background: brown;
+  position: relative;
+  background: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pizza__cheese {
+  width: 42.5vw;
+  height: 42.5vw;
+  border-radius: 50%;
+  background: orange;
+  position: relative;
+}
+.pizza__cheese::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  bottom: 100%;
+  border-top: 2px solid #000;
+  transform: rotate(-45deg);
+}
+.pizza__cheese::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  bottom: 100%;
+  border-top: 2px solid #000;
+  transform: rotate(45deg);
+}
+.pizza__toppings {
+  background: transparent;
+  position: relative;
+  width: 42.5vw;
+  height: 42.5vw;
+  border-radius: 50%;
+}
+.pizza__toppings::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 2px solid #000;
+}
+.pizza__toppings::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 2px solid #000;
+}
+.pizza__toppings--pepperoni {
+  width: 2.5vw;
+  height: 2.5vw;
+  background: #e3172a;
+  display: inline-block;
+  top: 0;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 2;
+  left: 62%;
+  top: 55%;
+}
+.pizza__toppings--pepperoni::before, .pizza__toppings--pepperoni::after {
+  content: "";
+  background-color: #e3172a;
+  border-radius: 50%;
+  height: 2.5vw;
+  position: absolute;
+  width: 2.5vw;
+}
+.pizza__toppings--pepperoni::before {
+  top: -1.25vw;
+  left: 0;
+}
+.pizza__toppings--pepperoni::after {
+  top: 0;
+  left: 1.25vw;
+}
+.pizza__toppings--pepperoni:nth-child(2) {
+  left: 38%;
+  top: 10%;
+}
+.pizza__toppings--pepperoni:nth-child(3) {
+  left: 10%;
+  top: 34%;
+}
+.pizza__toppings--pepperoni:nth-child(4) {
+  left: 56%;
+  top: 30%;
+}
+.pizza__toppings--pepperoni:nth-child(5) {
+  left: 27%;
+  top: 41%;
+}
+.pizza__toppings--pepperoni:nth-child(6) {
+  left: 31%;
+  top: 85%;
+}
+.pizza__toppings--pepperoni:nth-child(7) {
+  left: 78%;
+  top: 60%;
+}
+.pizza__toppings--pepperoni:nth-child(8) {
+  left: 17%;
+  top: 60%;
+}
+.pizza__toppings--pepperoni:nth-child(9) {
+  left: 71%;
+  top: 35%;
+}
+.pizza__toppings--pepperoni:nth-child(10) {
+  left: 67%;
+  top: 15%;
+}
+.pizza__toppings--pepperoni:nth-child(11) {
+  left: 59%;
+  top: 78%;
+}
+.pizza__toppings--pepperoni:nth-child(12) {
+  left: 34%;
+  top: 26%;
+}
+.pizza__toppings--pepperoni:nth-child(13) {
+  left: 87%;
+  top: 41%;
+}
+.pizza__toppings--pepperoni:nth-child(14) {
+  left: 40%;
+  top: 67%;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
